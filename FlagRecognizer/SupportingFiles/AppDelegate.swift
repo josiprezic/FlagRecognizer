@@ -11,8 +11,16 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    //
+    // MARK: - VARIABLES
+    //
+    
     var window: UIWindow?
 
+    //
+    // MARK: - METHODS
+    //
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let navigationController = UINavigationController(rootViewController: ViewController.fromStoryboard())

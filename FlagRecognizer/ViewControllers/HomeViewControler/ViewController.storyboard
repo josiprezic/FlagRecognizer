@@ -18,8 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpg-Yg-89o">
-                                <rect key="frame" x="176" y="323" width="23" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dqu-T4-KL8">
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="38Y-gG-uuB"/>
+                                    <constraint firstAttribute="width" constant="250" id="45C-bI-iuT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pL-qi-2C2">
+                                <rect key="frame" x="62.5" y="466" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="RDI-EP-iB9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,11 +37,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hpg-Yg-89o" firstAttribute="centerX" secondItem="uj9-MH-6HD" secondAttribute="centerX" id="oD4-Xn-S3z"/>
-                            <constraint firstItem="hpg-Yg-89o" firstAttribute="centerY" secondItem="uj9-MH-6HD" secondAttribute="centerY" id="wQF-CX-hMM"/>
+                            <constraint firstItem="dqu-T4-KL8" firstAttribute="centerY" secondItem="uj9-MH-6HD" secondAttribute="centerY" id="SK0-wy-Wk1"/>
+                            <constraint firstItem="1pL-qi-2C2" firstAttribute="centerX" secondItem="dqu-T4-KL8" secondAttribute="centerX" id="Vxm-oZ-8KP"/>
+                            <constraint firstItem="dqu-T4-KL8" firstAttribute="centerX" secondItem="uj9-MH-6HD" secondAttribute="centerX" id="am2-Yi-LlZ"/>
+                            <constraint firstItem="1pL-qi-2C2" firstAttribute="top" secondItem="dqu-T4-KL8" secondAttribute="bottom" constant="7.5" id="rPk-GG-krn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j7N-Vb-fJV"/>
                     </view>
+                    <connections>
+                        <outlet property="imgVwPhoto" destination="dqu-T4-KL8" id="2PX-EY-1O9"/>
+                        <outlet property="lblPhotoTitle" destination="1pL-qi-2C2" id="GxA-3S-pfS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sj-um-m35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
