@@ -13,6 +13,7 @@
 		E24F6D8522477D5800D7E600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24F6D8322477D5800D7E600 /* LaunchScreen.storyboard */; };
 		E24F6D8E22477E0800D7E600 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D8D22477E0800D7E600 /* Extensions.swift */; };
 		E24F6D9022477F4200D7E600 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24F6D8F22477F4200D7E600 /* ViewController.storyboard */; };
+		E24F6D9622478EF500D7E600 /* FlagImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D9522478EF500D7E600 /* FlagImageClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E24F6D8622477D5800D7E600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E24F6D8D22477E0800D7E600 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E24F6D8F22477F4200D7E600 /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
+		E24F6D9522478EF500D7E600 /* FlagImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlagImageClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		E24F6D8C22477DEE00D7E600 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E24F6D9422478EC800D7E600 /* MLModels */,
 				E24F6D8122477D5800D7E600 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -97,6 +100,14 @@
 				E24F6D7C22477D5700D7E600 /* ViewController.swift */,
 			);
 			path = HomeViewControler;
+			sourceTree = "<group>";
+		};
+		E24F6D9422478EC800D7E600 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				E24F6D9522478EF500D7E600 /* FlagImageClassifier.mlmodel */,
+			);
+			path = MLModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24F6D7D22477D5700D7E600 /* ViewController.swift in Sources */,
+				E24F6D9622478EF500D7E600 /* FlagImageClassifier.mlmodel in Sources */,
 				E24F6D8E22477E0800D7E600 /* Extensions.swift in Sources */,
 				E24F6D7B22477D5700D7E600 /* AppDelegate.swift in Sources */,
 			);
