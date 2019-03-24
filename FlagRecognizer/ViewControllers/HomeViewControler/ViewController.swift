@@ -16,6 +16,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet private final var imgVwPhoto: UIImageView!
     @IBOutlet private final var lblPhotoTitle: UILabel!
+    @IBOutlet private final var lblPhotoPercentage: UILabel!
     
     //
     // MARK: - VIEW METHODS
@@ -57,6 +58,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             guard let prediction = CoreMLHelper.predict(image: image) else { return }
             DispatchQueue.main.async {
                 self.lblPhotoTitle.text = "I think this is a flag of \(prediction.classLabel)."
+                let percentage = prediction.classLabelProbs[prediction.classLabel] ?? 0.0
+                self.lblPhotoPercentage.text = "\(round(percentage * 1000)/10) %"
             }
         }
     }

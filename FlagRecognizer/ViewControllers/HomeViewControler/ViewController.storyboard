@@ -26,11 +26,17 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pL-qi-2C2">
-                                <rect key="frame" x="62.5" y="466" width="250" height="100"/>
+                                <rect key="frame" x="62.5" y="466" width="250" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="5SG-wX-UkT"/>
+                                    <constraint firstAttribute="height" constant="60" id="5SG-wX-UkT"/>
                                     <constraint firstAttribute="width" constant="250" id="RDI-EP-iB9"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEY-Wd-o3w">
+                                <rect key="frame" x="62.5" y="526" width="250" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,7 +44,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kEY-Wd-o3w" firstAttribute="trailing" secondItem="1pL-qi-2C2" secondAttribute="trailing" id="2zD-l1-eko"/>
+                            <constraint firstItem="kEY-Wd-o3w" firstAttribute="top" secondItem="1pL-qi-2C2" secondAttribute="bottom" id="LBb-k4-Mzv"/>
                             <constraint firstItem="dqu-T4-KL8" firstAttribute="centerY" secondItem="uj9-MH-6HD" secondAttribute="centerY" id="SK0-wy-Wk1"/>
+                            <constraint firstItem="kEY-Wd-o3w" firstAttribute="leading" secondItem="1pL-qi-2C2" secondAttribute="leading" id="VTJ-Zt-zag"/>
                             <constraint firstItem="1pL-qi-2C2" firstAttribute="centerX" secondItem="dqu-T4-KL8" secondAttribute="centerX" id="Vxm-oZ-8KP"/>
                             <constraint firstItem="dqu-T4-KL8" firstAttribute="centerX" secondItem="uj9-MH-6HD" secondAttribute="centerX" id="am2-Yi-LlZ"/>
                             <constraint firstItem="1pL-qi-2C2" firstAttribute="top" secondItem="dqu-T4-KL8" secondAttribute="bottom" constant="7.5" id="rPk-GG-krn"/>
@@ -47,6 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="imgVwPhoto" destination="dqu-T4-KL8" id="2PX-EY-1O9"/>
+                        <outlet property="lblPhotoPercentage" destination="kEY-Wd-o3w" id="Ath-Zb-JXo"/>
                         <outlet property="lblPhotoTitle" destination="1pL-qi-2C2" id="GxA-3S-pfS"/>
                     </connections>
                 </viewController>
