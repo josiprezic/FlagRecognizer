@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  FlagRecognizer
 //
-//  Created by Korisnik on 24/03/2019.
+//  Created by Josip Rezic on 24/03/2019.
 //  Copyright © 2019 Josip Rezic. All rights reserved.
 //
 

@@ -14,6 +14,7 @@
 		E24F6D8E22477E0800D7E600 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D8D22477E0800D7E600 /* Extensions.swift */; };
 		E24F6D9022477F4200D7E600 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24F6D8F22477F4200D7E600 /* ViewController.storyboard */; };
 		E24F6D9622478EF500D7E600 /* FlagImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D9522478EF500D7E600 /* FlagImageClassifier.mlmodel */; };
+		E24F6D9E2247A61D00D7E600 /* CoreMLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D9D2247A61D00D7E600 /* CoreMLHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E24F6D8D22477E0800D7E600 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E24F6D8F22477F4200D7E600 /* ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		E24F6D9522478EF500D7E600 /* FlagImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlagImageClassifier.mlmodel; sourceTree = "<group>"; };
+		E24F6D9D2247A61D00D7E600 /* CoreMLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		E24F6D7922477D5700D7E600 /* FlagRecognizer */ = {
 			isa = PBXGroup;
 			children = (
+				E24F6D9A2247A41800D7E600 /* Helpers */,
 				E24F6D912247812200D7E600 /* SupportingFiles */,
 				E24F6D8C22477DEE00D7E600 /* Resources */,
 				E24F6D922247815900D7E600 /* ViewControllers */,
@@ -108,6 +111,14 @@
 				E24F6D9522478EF500D7E600 /* FlagImageClassifier.mlmodel */,
 			);
 			path = MLModels;
+			sourceTree = "<group>";
+		};
+		E24F6D9A2247A41800D7E600 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E24F6D9D2247A61D00D7E600 /* CoreMLHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24F6D7D22477D5700D7E600 /* ViewController.swift in Sources */,
+				E24F6D9E2247A61D00D7E600 /* CoreMLHelper.swift in Sources */,
 				E24F6D9622478EF500D7E600 /* FlagImageClassifier.mlmodel in Sources */,
 				E24F6D8E22477E0800D7E600 /* Extensions.swift in Sources */,
 				E24F6D7B22477D5700D7E600 /* AppDelegate.swift in Sources */,
